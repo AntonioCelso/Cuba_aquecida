@@ -6,7 +6,7 @@
 #define DEBUG 1
 
 // Mude aqui a temperatura que se queira
-const int temp_final = 60;
+const int temp_final = 200;
 
 //coeficiente de calibracao
 const float coef_lin=1.3;
@@ -29,7 +29,7 @@ volatile boolean zero_cross=0;
 volatile int i=0;
 int dim = 0; // Dimming level (0-128)  0 = on, 128 = 0ff
 int inc=1;
-int freqStep = 65;  // (120 Hz=8333uS) / 128 brightness steps = 65 uS / brightness step
+int freqStep = 120;  // (120 Hz=8333uS) / 128 brightness steps = 65 uS / brightness step
                     // (100Hz=10000uS) / 128 steps = 75uS/step
 
 
